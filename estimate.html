@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a free metal roofing estimate from Troyer's Contracting. Fill out our detailed quote form and we'll get back to you promptly.">
+  <title>Free Estimate | Troyer's Contracting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Troyer's Contracting Home">
+        <img src="images/logo.png" alt="Troyer's Contracting Logo">
+        <h1>Troyer's <span>Contracting</span></h1>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="estimate.html" class="btn btn-primary active">Free Estimate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Get a Free Estimate</h1>
+      <p>Tell us about your project and we'll provide a detailed, no-obligation quote</p>
+    </div>
+  </section>
+
+  <!-- Estimate Form -->
+  <section class="estimate-section section-padding">
+    <div class="container">
+      <div class="estimate-form-container fade-in">
+        <h3>Request Your Free Quote</h3>
+        <p>Please fill out the form below with as much detail as possible. The more we know about your project, the more accurate your estimate will be. We typically respond within 1 business day.</p>
+
+        <form id="estimate-form" action="https://formsubmit.co/troyercontractingllc@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Estimate Request — Troyer's Contracting">
+            <input type="hidden" name="_next" value="https://troyerscontracting.vercel.app/estimate.html">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="true">
+
+          <!-- Contact Information -->
+          <h4 class="form-section-title">Your Contact Information</h4>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="est-name">Full Name *</label>
+              <input type="text" id="est-name" name="name" required placeholder="Your full name" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="est-phone">Phone Number *</label>
+              <input type="tel" id="est-phone" name="phone" required placeholder="(716) 640-3216" autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="est-email">Email Address *</label>
+              <input type="email" id="est-email" name="email" required placeholder="you@example.com" autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="est-address">Property Address *</label>
+              <input type="text" id="est-address" name="address" required placeholder="123 Main St, City, ST 12345" autocomplete="street-address">
+            </div>
+          </div>
+
+          <!-- Project Details -->
+          <h4 class="form-section-title">Project Details</h4>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="est-project-type">Project Type *</label>
+              <select id="est-project-type" name="project_type" required>
+                <option value="" disabled selected>Select project type</option>
+                <option value="new-roof">New Roof Installation</option>
+                <option value="replacement">Roof Replacement</option>
+                <option value="repair">Roof Repair</option>
+                <option value="commercial">Commercial Roofing</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="est-metal-type">Preferred Metal Type</label>
+              <select id="est-metal-type" name="metal_type">
+                <option value="" disabled selected>Select metal type</option>
+                <option value="standing-seam">Standing Seam</option>
+                <option value="corrugated">Corrugated</option>
+                <option value="not-sure">Not Sure — Need Guidance</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="est-roof-size">Estimated Roof Size (sq ft)</label>
+              <input type="text" id="est-roof-size" name="roof_size" placeholder="e.g., 1500 sq ft (approximate is fine)">
+            </div>
+            <div class="form-group">
+              <label for="est-timeline">Desired Timeline</label>
+              <select id="est-timeline" name="timeline">
+                <option value="" disabled selected>When do you need this done?</option>
+                <option value="asap">As Soon As Possible</option>
+                <option value="1-month">Within 1 Month</option>
+                <option value="1-3-months">1–3 Months</option>
+                <option value="3-6-months">3–6 Months</option>
+                <option value="planning">Just Planning / No Rush</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Project Description -->
+          <h4 class="form-section-title">Additional Details</h4>
+          <div class="form-group">
+            <label for="est-description">Project Description *</label>
+            <textarea id="est-description" name="description" required rows="5" placeholder="Please describe your project in detail: current roof condition, any specific concerns, color preferences, special requirements, etc."></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Submit Estimate Request</button>
+          </div>
+
+          <p style="text-align: center; margin-top: 15px; font-size: 0.85rem; color: #888;">
+            Your information is secure and will never be shared with third parties.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose CTA -->
+  <section class="why-choose section-padding">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Why Get an Estimate from Us?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card fade-in">
+          <div class="why-icon" aria-hidden="true">&#128176;</div>
+          <h3>100% Free</h3>
+          <p>No cost, no obligation. Get a detailed quote at absolutely no charge.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-icon" aria-hidden="true">&#9889;</div>
+          <h3>Fast Response</h3>
+          <p>We respond to estimate requests within 1 business day.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-icon" aria-hidden="true">&#128196;</div>
+          <h3>Detailed Quote</h3>
+          <p>Transparent, itemized pricing so you know exactly what you're paying for.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-icon" aria-hidden="true">&#128101;</div>
+          <h3>Expert Advice</h3>
+          <p>We'll help you choose the right materials and approach for your project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Troyer's <span>Contracting</span></h3>
+          <p>Quality metal roofing built to last. Serving our community with pride, one roof at a time.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><span aria-hidden="true">f</span></a>
+            <a href="#" aria-label="Instagram"><span aria-hidden="true">in</span></a>
+            <a href="#" aria-label="Google Business"><span aria-hidden="true">G</span></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#standing-seam">Standing Seam</a></li>
+            <li><a href="services.html#corrugated">Corrugated</a></li>
+            <li><a href="services.html#repairs">Repairs</a></li>
+            <li><a href="services.html#replacement">Replacement</a></li>
+            <li><a href="services.html#commercial">Commercial</a></li>
+            <li><a href="services.html#gutters">Gutters &amp; Trim</a></li>
+            <li><a href="services.html#pole-barns">Pole Barn Garages</a></li>
+            <li><a href="services.html#decks">Decks</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <ul class="footer-contact-info">
+            <li><span class="icon" aria-hidden="true">&#128205;</span><span>123 Main Street, Your City, ST 12345</span></li>
+            <li><span class="icon" aria-hidden="true">&#128222;</span><a href="tel:+17166403216">(716) 640-3216</a></li>
+            <li><span class="icon" aria-hidden="true">&#9993;</span><a href="mailto:troyercontractingllc@gmail.com">troyercontractingllc@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Troyer's Contracting. All rights reserved. | <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="tel:+17166403216" class="floating-call" aria-label="Call Troyer's Contracting">
+    <span aria-hidden="true">&#128222;</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
