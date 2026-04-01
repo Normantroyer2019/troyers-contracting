@@ -101,11 +101,11 @@
         <div class="form-container fade-in">
           <h3>Send Us a Message</h3>
           <p style="color: #666; margin-bottom: 25px;">Fill out the form below and we'll get back to you as soon as possible.</p>
-          <form id="contact-page-form" action="https://formsubmit.co/troyercontractingllc@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="New Contact Page Message — Troyer's Contracting">
-            <input type="hidden" name="_next" value="https://troyerscontracting.vercel.app/contact.html">
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_captcha" value="true">
+          <form id="contact-page-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="a8f6284e-793e-4bdb-802e-69b0ca9d74a1">
+            <input type="hidden" name="subject" value="New Contact Page Message — Troyer's Contracting">
+            <input type="hidden" name="redirect" value="https://troyerscontracting.vercel.app/thank-you.html">
+            <input type="checkbox" name="botcheck" style="display:none">
             <div class="form-row">
               <div class="form-group">
                 <label for="cp-name">Full Name *</label>

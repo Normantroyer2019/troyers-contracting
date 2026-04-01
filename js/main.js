@@ -105,8 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   forms.forEach(form => {
     form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
       // Basic validation
       const required = form.querySelectorAll('[required]');
       let valid = true;
@@ -130,11 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      if (valid) {
-        // REPLACE: Add your form submission logic here (e.g., fetch to a backend API, or a service like Formspree/Netlify Forms)
-        alert('Thank you! Your message has been sent. We will get back to you shortly.');
-        form.reset();
-      } else {
+      if (!valid) {
+        e.preventDefault();
         alert('Please fill in all required fields correctly.');
       }
     });
