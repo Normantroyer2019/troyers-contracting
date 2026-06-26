@@ -1,0 +1,54 @@
+{
+  "redirects": [
+    {
+      "source": "/post/benefits-of-metal-roofing-in-upstate-new-york",
+      "destination": "/blog/benefits-of-metal-roofing-in-upstate-new-york.html",
+      "statusCode": 308
+    },
+    {
+      "source": "/post/:path*",
+      "destination": "/blog/index.html",
+      "statusCode": 308
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/index.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/blank-1",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/book-online",
+      "destination": "/estimate.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/get-a-quote",
+      "destination": "/estimate.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/gallery.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio-collections/my-portfolio",
+      "destination": "/gallery.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-page/custom-barndominium-s",
+      "destination": "/services.html#pole-barns",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-page/shingle-roofing",
+      "destination": "/services.html#replacement",
+      "statusCode": 301
+    }
+  ]
+}
